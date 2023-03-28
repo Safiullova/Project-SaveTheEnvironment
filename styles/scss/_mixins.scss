@@ -1,0 +1,75 @@
+@function vw($value, $base: 1500) {
+	@return $value / $base * 100vw;
+}
+
+@function vh($value, $base: 5750) {
+	@return $value / $base * 100vh;
+}
+
+@mixin mobile {
+	@media(max-width: 576px) {
+		@content;
+	}
+}
+
+// Миксин для кнопки (БЕЛАЯ)
+@mixin button {
+	width: 148px;
+    height: 51px;
+	border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+        
+    text-align: center;
+        
+    color:$color-lblack;
+    border-color:$color-white;
+
+    background: $color-white;
+    backdrop-filter: blur(40px);
+
+}
+
+// Заголовок для блока (с полоской впереди)
+
+// в html пишем так:
+//    <div class="YOUR-BLOCK block-title">
+// 	     <div class="block-title__line"></div>
+//       <p class="block-title__text">НАЗВАНИЕ БЛОКА</p>
+//    </div>
+
+@mixin block-title {
+	display: flex;
+	align-items: center;
+
+	.block-title__line {
+	width: 72px;
+	height: 0px;
+	border: 2px solid #1D2130;
+	margin-right: 24px;
+	}
+	.block-title__text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #1D2130;
+	}
+}
+
+
+// Заголовок h2 (крупный шрифт) белый\черный надо дописать
+@mixin h2-title {
+	font-family: 'Roboto';
+    font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 120%;
+}
+// color: указать цвет;
