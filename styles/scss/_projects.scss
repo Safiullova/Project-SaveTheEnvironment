@@ -1,0 +1,13 @@
+h2 {
+@include h2-title;
+}
+
+h3 {
+    @include block-title;
+
+}
+
+.button {
+    @include button;
+    background: $color-dgreen;
+}
