@@ -1,0 +1,267 @@
+
+
+.header{
+
+    .header-menu{
+
+    display: flex;
+    padding: 15px;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        margin-left: 220px;
+    }
+    &__nav{
+        width: 50vw;
+        margin-right: 220px;
+        
+    }
+    &__nav-list{
+
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 25px;
+        padding: 10px; 
+
+    }
+    &__list-item a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+                    
+        color: $color-black;
+        text-decoration: none;
+    }
+}
+.header-description{
+    padding: 55px;
+    background-image: url("/assets/images/BG.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+
+    &__title{
+        margin-left: 60px;
+        margin-top: 50px;
+        padding: 10px;
+        width: 50vw;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 120%;
+
+color:$color-white;
+    }
+
+&__button{
+    @include button;
+    
+    margin-left: 75px;
+
+}
+&__play{
+    position: relative;
+    margin-left: 110px;
+    margin-top: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color:$color-white;
+}
+&__play::before{
+content:'';
+position: absolute;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: -35px;
+background-image: url(/assets/images/Play.svg);
+background-repeat: no-repeat;
+height: 30px;
+}
+&__set-line{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 60px;
+
+}
+&__planted{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    
+    
+    text-align: right;
+    
+    color: $color-white;
+}
+&__line-img{
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 3px;
+    width: 60vw;
+}
+&__donations{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    
+    
+    text-align: right;
+    
+    color: $color-white;
+}
+}
+}
+
+@media (max-width: 767px) {
+    .header{
+        .header-menu{
+
+        &__burger {
+            position: relative;
+            margin-top: 15px;
+            width: 40px;
+            height: 35px;
+            display: block;
+    
+        }
+        &__burger span,
+        &__burger:after,
+        &__burger:before {
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: $color-lblack;
+        margin: 0 auto;
+    }
+
+    &__burger span {
+        top: 11px;
+    }
+
+    &__burger:after,
+    &__burger:before {
+        content: '';
+    }
+
+    &__burger:after {
+        bottom: 14px;
+    }
+
+    &__burger:before {
+        top: 5px;
+    }
+    
+        &__logo{
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        &__nav{
+        display: none;
+            
+        }
+
+        &__list-item a{
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+    .header-description{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        background-image: url("/assets/images/BG.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    
+    
+        &__title{
+            margin-left: 20px;
+            padding: 5px;
+            width: 50vw;
+            font-size: 40px;
+        }
+    
+    &__button{
+        @include button;
+        
+        margin-left: 20px;
+    
+    }
+    &__play{
+        margin-left: 60px;
+    }
+    &__set-line{
+        flex-direction: column;
+        margin-left: 5px;
+
+        margin-right: 50px;
+    
+    }
+    
+    &__line-img{
+        width: 50vw;
+    }
+
+    }
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .header{
+        .header-menu{
+    
+        &__logo{
+            margin-left: 70px;
+        }
+        &__nav{
+      margin-left: 30px;
+
+            
+        }
+    }
+    .header-description{
+    
+        &__title{
+            margin-left: 20px;
+            padding: 5px;
+            width: 50vw;
+            font-size: 40px;
+        }
+    
+    &__button{
+        margin-left: 20px;
+    
+    }
+    &__play{
+        margin-left: 60px;
+    }
+    &__set-line{
+        flex-direction: column;
+        margin-left: 5px;
+
+        margin-right: 50px;
+    
+    }
+    
+    &__line-img{
+        width: 50vw;
+    }
+
+    }
+    }
+}
