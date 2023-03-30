@@ -24,7 +24,7 @@ text-transform: uppercase;
 color: $color-lblack;
 
     }
-    &__yext{
+    &__text{
         font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -69,8 +69,9 @@ opacity: 0.7;
         .contacts-adress-description {
                 display: flex;
         }
-              
-               &__tel {
+
+            &__tel {
+
                     margin-right: 25px;
                     font-family: 'Roboto';
                     font-style: normal;
@@ -81,9 +82,11 @@ opacity: 0.7;
                     
                     color: $color-dgray;
                     
-                    }
-                    &__mail{
-                        font-family: 'Roboto';
+                }
+
+                &__mail{
+
+                font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 20px;
@@ -94,33 +97,29 @@ opacity: 0.7;
                     }
                 }
             
-            .contacts-adress__titlee-adress{
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 160%;
+    .contacts-adress__titlee-adress{
 
-
-                color: $color-lblack;
-
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    color: $color-lblack;
 
                 }
-       .contacts-adress__text{
-    font-family: 'Roboto';
+
+.contacts-adress__text {
+
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 160%;
-
-color: $color-dgray;
-
-       
- 
-
+color: $color-dgray
 }
+
 .contacts-adress__title-office{
-    font-family: 'Roboto';
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
@@ -128,13 +127,119 @@ line-height: 160%;
 
 color: $color-lblack;
 }
+
 .contacts-adress__text-street{
-    font-family: 'Roboto';
+
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 160%;
 color: $color-dgray;
 }
+
+@media (max-width: 767px){
+
+    .contacts-description{
+        flex-direction: column;
+        flex: 0 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+    
+
+&__contact{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+
+}
+    &__title {
+        font-size: 0.9em;
+
+    }
+    &__text{
+        
+    font-size: 3em;
+
+
+    }
+    &__questiont{
+        font-size: 0.9em;
+    }
+
+    }
+    .contacts-adress{
+        margin-top: auto;
+            margin-right: auto;
+            padding: 5px;
+    
+            width: 100vw;
+
+        &__title{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 160%;
+
+            color: $color-lblack;
+        }
+        .contacts-adress-description {
+            flex-direction: column;
+        }
+
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    .contacts-description{
+        flex-direction: column;
+        flex: 0 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+    
+
+&__contact{
+    margin-left: 50px;
+    margin-right: 5px;
+    padding: 10px;
+
+}
+    &__title {
+        font-size: 0.9em;
+
+    }
+    &__text{
+        
+    font-size: 3em;
+
+    }
+    &__questiont{
+        font-size: 0.9em;
+    }
+
+    }
+    .contacts-adress{
+        margin-left: 50px;
+        padding: 5px;
+    
+        width: 100vw;
+
+        &__title{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 160%;
+
+            color: $color-lblack;
+        }
+
+    }
+}
+
+
 
 
