@@ -1,7 +1,4 @@
 
-
-.header{
-
     .header-menu{
 
     display: flex;
@@ -125,10 +122,10 @@ height: 30px;
     color: $color-white;
 }
 }
-}
+
 
 @media (max-width: 767px) {
-    .header{
+    
         .header-menu{
 
         &__burger {
@@ -219,17 +216,19 @@ height: 30px;
 
     }
     }
-}
+
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .header{
+
         .header-menu{
+            margin-left: auto;
+            margin-right: auto;
     
         &__logo{
             margin-left: 70px;
         }
         &__nav{
-      margin-left: 30px;
+        margin-left: 30px;
 
             
         }
@@ -264,4 +263,4 @@ height: 30px;
 
     }
     }
-}
+
