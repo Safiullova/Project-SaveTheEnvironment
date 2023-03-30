@@ -36,10 +36,10 @@
 // Заголовок для блока (с полоской впереди)
 
 // в html пишем так:
-//    <div class="YOUR-BLOCK block-title">
+//    <h3 class="YOUR-BLOCK block-title">
 // 	     <div class="block-title__line"></div>
 //       <p class="block-title__text">НАЗВАНИЕ БЛОКА</p>
-//    </div>
+//    </h3>
 
 @mixin block-title {
 	display: flex;
