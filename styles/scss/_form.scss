@@ -1,0 +1,176 @@
+.connection{
+
+    padding: 96px;
+    margin-left: 400px;
+    margin-right: 402px;
+       
+    &-form{
+    display: flex;
+
+        &__firstname {
+            padding: 5px;
+            margin: 20px 105px;
+        }
+        
+        &__namefirst{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 160%;
+        color: $color-lblack;
+        opacity: 0.6;
+        }
+        &__input-name{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 160%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    
+        color: $color-lblack;
+        }
+
+
+        &__namelast{
+            padding: 5px;
+          margin-left: 105px;
+        }
+          &__lastname{
+            font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 160%;
+    
+    color: $color-lblack;
+    
+    opacity: 0.6;
+    }
+    
+    &__lastname-input{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 160%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+    color: $color-lblack;
+    
+    }
+
+    &__email{
+        padding: 5px;
+        margin: 20px 15px;
+
+    }
+
+   &__email-name{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 19px;
+line-height: 160%;
+
+
+color: $color-lblack;
+
+
+
+opacity: 0.6;
+   }
+
+   &__emailid{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 160%;
+    
+    
+    color: $color-lblack;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+   }
+
+
+   &__subject{
+    padding: 5px;
+    margin-left: 15px;
+   }
+
+   &__subject-name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 160%;
+    
+    
+    
+    color: $color-lblack;
+    
+    
+    opacity: 0.6;
+   }
+
+   &__subject-input{
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   }
+
+
+    }
+    .connection-form__message
+    {
+        margin-left: 105px;
+        margin-top: 60px;
+
+
+        .connection-form__text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 160%;
+        
+        color: $color-lblack;
+        opacity: 0.6;
+       }
+
+       .connection-form__input-text{
+        width: 570px;
+        height: 200px;
+        padding-top: 5px;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+
+color: $color-lblack;
+
+opacity: 0.6;
+       }
+    }
+   
+    }
+    
+
+
+
+
+
+
+   
