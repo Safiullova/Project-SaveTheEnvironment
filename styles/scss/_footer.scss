@@ -1,3 +1,59 @@
+// Footer start/
 .footer {
-    color: red;
-}
+    display: flex;
+    justify-content: space-around;
+    padding: 7% 8% 7% 8%;
+    background-color: $color-black;
+  
+    &__logo {
+    margin-top: 25px;
+    }
+  
+    &__menuList, &__contactsList {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 300%;
+      color: $color-white;
+    }
+    &__menuList-item, &__contactsList-item {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 300%;
+      color: $color-white;
+      opacity: 0.78;
+    }
+  
+  
+  
+    &__form {
+      margin-left: 25px;
+      width: 40%;
+      &__title-white {
+        @include h2-title;
+        color: $color-white;
+      }
+      &__input {
+        width: 250px;
+        height: 51px;
+        border: 1px solid rgba(235, 240, 249, 0.3);
+        border-radius: 4px;
+        padding-left: 24px;
+        background-color: $color-black;
+      }
+      &__button{
+        @include button;
+      }
+  
+    }
+  }
+  
+  @media screen and (max-width: 931px) {
+    .footer {
+      display: block;
+    }
+    nav {
+      display: none;
+    }
+    }
+  
+  // Footer end/
