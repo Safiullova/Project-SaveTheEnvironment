@@ -262,7 +262,7 @@ h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3.2vw;
   line-height: 120%;
 }
 
@@ -274,14 +274,14 @@ h3 .block-title__line {
   width: 72px;
   height: 0px;
   border: 2px solid #1D2130;
-  margin-right: 24px;
+  margin-right: 1.6vw;
 }
 h3 .block-title__text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 0.3304347826vh;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #1D2130;
@@ -304,10 +304,236 @@ h3 .block-title__text {
   background: #70C174;
 }
 
-.footer {
-  color: red;
+.projects-part1 {
+  padding: 8vw;
 }
 
+.projects__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2vw;
+  line-height: 120%;
+  color: #1D2130;
+}
+
+.projects-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.6vw;
+  flex-wrap: wrap;
+}
+.projects-cards__card1, .projects-cards__card2, .projects-cards__card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20% 15% 15% 15%;
+  border-radius: 12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projects-cards__card1__card1:hover, .projects-cards__card2__card1:hover, .projects-cards__card3__card1:hover {
+  background: #0B0706;
+  opacity: 0.5;
+}
+.projects-cards__card-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin: 0%;
+}
+.projects-cards__card-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 64px;
+}
+.projects-cards__button {
+  width: 148px;
+  height: 51px;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #1D2130;
+  border-color: #FFFFFF;
+  background: #FFFFFF;
+  backdrop-filter: blur(40px);
+}
+.projects-cards__card1 {
+  background-image: url("/assets/images/wood.png");
+}
+.projects-cards__card2 {
+  background-image: url("/assets/images/weekly.png");
+}
+.projects-cards__card3 {
+  background-image: url("/assets/images/wildlife.png");
+}
+
+.projects-part2 {
+  display: flex;
+  padding-left: 8vw;
+  background-color: #0B0706;
+}
+.projects-part2__donations {
+  display: flex;
+  flex-direction: column;
+  width: 58%;
+  margin-top: 56px;
+  padding-right: 5%;
+}
+.projects-part2__donations__title-white {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2vw;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.projects-part2__donations__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  opacity: 0.6;
+  margin-bottom: 5%;
+  color: #FFFFFF;
+}
+.projects-part2__donations__parts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-part2__donations__part {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.projects-part2__donations #kubik-form {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.projects-part2__donations .kubik-text {
+  margin-right: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+.projects-part2__donations .kubik1 {
+  background: #BEF3C0;
+}
+.projects-part2__donations .kubik2 {
+  background: #AC94F1;
+}
+.projects-part2__donations .kubik3 {
+  background: #FFF0CA;
+}
+.projects-part2__donations .kubik4 {
+  background: #F9CF64;
+}
+.projects-part2__donations .kubik5 {
+  background: #F38FBF;
+}
+.projects-part2__chart {
+  margin: 6.4vw 0 6.4vw 5%;
+}
+.projects-part2__chart-circle__img {
+  width: 90%;
+}
+
+@media screen and (max-width: 931px) {
+  .projects-cards {
+    grid-template-columns: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects-part2__donations {
+    width: 100%;
+  }
+  .projects-part2__chart {
+    display: none;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 7% 8% 7% 8%;
+  background-color: #0B0706;
+}
+.footer__logo {
+  margin-top: 25px;
+}
+.footer__menuList, .footer__contactsList {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 300%;
+  color: #FFFFFF;
+}
+.footer__menuList-item, .footer__contactsList-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 300%;
+  color: #FFFFFF;
+  opacity: 0.78;
+}
+.footer__form {
+  margin-left: 25px;
+  width: 40%;
+}
+.footer__form__title-white {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2vw;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.footer__form__input {
+  width: 250px;
+  height: 51px;
+  border: 1px solid rgba(235, 240, 249, 0.3);
+  border-radius: 4px;
+  padding-left: 24px;
+  background-color: #0B0706;
+}
+.footer__form__button {
+  width: 148px;
+  height: 51px;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #1D2130;
+  border-color: #FFFFFF;
+  background: #FFFFFF;
+  backdrop-filter: blur(40px);
+}
+
+@media screen and (max-width: 931px) {
+  .footer {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+}
 .contacts-description {
   background-color: #EBF0F9;
   display: flex;

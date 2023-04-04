@@ -36,10 +36,10 @@
 // Заголовок для блока (с полоской впереди)
 
 // в html пишем так:
-//    <div class="YOUR-BLOCK block-title">
+//    <h3 class="YOUR-BLOCK block-title">
 // 	     <div class="block-title__line"></div>
 //       <p class="block-title__text">НАЗВАНИЕ БЛОКА</p>
-//    </div>
+//    </h3>
 
 @mixin block-title {
 	display: flex;
@@ -49,14 +49,14 @@
 	width: 72px;
 	height: 0px;
 	border: 2px solid #1D2130;
-	margin-right: 24px;
+	margin-right: vw(24);
 	}
 	.block-title__text {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
-	line-height: 19px;
+	line-height: vh(19);
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: #1D2130;
@@ -69,7 +69,7 @@
 	font-family: 'Roboto';
     font-style: normal;
 	font-weight: 700;
-	font-size: 48px;
+	font-size: vw(48);
 	line-height: 120%;
 }
 // color: указать цвет;
