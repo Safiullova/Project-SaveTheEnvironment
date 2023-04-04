@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-        <div class="header-menu">
+        <div class="header-menu" id="finsweet">
 
             <img class="header-menu__logo" src="/assets/images/logo.svg" alt="finsweet">
             <div class="header-menu__burger">
@@ -45,18 +45,18 @@
 
     <main>
         <section class="knowAboutUs">
-            <h3 class="knowAboutUs block-title">
+            <h3 class="knowAboutUs block-title" id="about us">
                 <div class="block-title__line"></div>
                 <p class="block-title__text">know About Us</p>
             </h3>
             <button class="button"> для примера</button>
         </section>
-        <section class="whatWeDo"></section>
+        <section class="whatWeDo" id="what we do"></section>
         <section class="YouCan"></section>
         <section class="Our"></section>
         <section class="ReadOurNews"></section>
         <section class="OurEvents"></section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="projects-part1">
                 <h3 class="projects blok-title">
                     <div class="block-title__line"></div>
@@ -126,7 +126,7 @@
         </section>
 
         <section class="сontacts">
-            <div class="contacts-description">
+            <div class="contacts-description" id="contact">
                 <div class="contacts-description__contact">
                     <h1 class="contacts-description__title">Contact us</h1>
                     <h2 class="contacts-description__text">We'd love to hear from you</h2>
@@ -162,10 +162,51 @@
         <section class="Map"></section>
         <!-- прибавлять, переименовынать секции можно, удалять пока не желательно -->
     </main>
-
+    <!-- Footer start -->
     <footer class="footer">
-        <p>Эту штуку я поправлю, уберу лишнее</p>
+        <div class="footer__logo">
+            <img src="/assets/icons/LogoWhite.png" alt="logo" href="#finsweet">
+        </div>
+        <nav class="footer__menu">
+            <ul class="footer__menuList">
+                <li class="footer__menuList-items">
+                    <a class="footer__menuList-item" href="#about us">About us</a>
+                </li>
+                <li class="footer__menuList-items">
+                    <a class="footer__menuList-item" href="#what we do">What we do</a>
+                </li>
+                <li class="footer__menuList-items">
+                    <a class="footer__menuList-item" href="#projects">Projects</a>
+                </li>
+                <li class="footer__menuList-items">
+                    <a class="footer__menuList-item" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="footer__contacts">
+            <ul class="footer__contactsList">
+                <li class="footer__contactsList-items">
+                    <a class="footer__contactsList-item">Facebook</a>
+                </li>
+                <li class="footer__contactsList-items">
+                    <a class="footer__contactsList-item">Instagram</a>
+                </li>
+                <li class="footer__contactsList-items">
+                    <a class="footer__contactsList-item">Twitter</a>
+                </li>
+                <li class="footer__contactsList-items">
+                    <a class="footer__contactsList-item">Linkdin</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__form">
+            <h2 class="footer__form__title-white">Subscribe to get latest updates</h2>
+            <input class="footer__form__input" placeholder="Your email">
+            <button class="footer__form__button">Subscribe</button>
+        </div>
     </footer>
+    <!--Footer end-->
 </body>
 
 </html>

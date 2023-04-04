@@ -12,22 +12,26 @@ h3 {
     background: $color-dgreen;
 }
 
+.projects-part1 {
+  padding: vw(120);
+}
+
 .projects__title {
     @include h2-title;
     color: $color-lblack;
   }
   
-  .projects-cards {
+.projects-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 24px;
+    grid-gap: vw(24);
     flex-wrap: wrap;
   
     &__card1, &__card2, &__card3 {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 80px 48px 48px 48px;;
+      padding: 20% 15% 15% 15%;
       border-radius: 12px;
       background-size: cover;
       background-repeat: no-repeat;
@@ -75,10 +79,7 @@ h3 {
   
   .projects-part2 {
     display: flex;
-    margin-top: 96px;
-    margin-right: -10%;
-    margin-left: -10%;
-    padding-left: 7%;
+    padding-left: vw(120);
     background-color: $color-black;
   
     &__donations {
@@ -148,7 +149,7 @@ h3 {
     }
   
     &__chart {
-      margin: 96px 0 96px 5%;
+      margin: vw(96) 0 vw(96) 5%;
     }
     &__chart-circle__img{
       width: 90%;
