@@ -58,6 +58,12 @@ a {
   color: #0B0706;
   text-decoration: none;
 }
+.header-menu__list-item :hover {
+  background-color: #0B0706;
+  color: #EFF7F2;
+  border-radius: 4px;
+  padding: 20px;
+}
 
 .header-description {
   padding: 55px;
@@ -604,7 +610,7 @@ h3 .block-title__text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 28px;
   text-decoration: none;
   color: #525560;
