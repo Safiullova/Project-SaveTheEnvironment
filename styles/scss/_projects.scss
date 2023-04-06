@@ -88,6 +88,7 @@ h3 {
       width: 58%;
       margin-top: 56px;
       padding-right: 5%;
+      padding-bottom: 5%;
   
       &__title-white {
         @include h2-title;
@@ -156,21 +157,31 @@ h3 {
     }
   }
   
-  @media screen and (max-width: 931px) {
+  @media (min-width: 768px) and (max-width: 1023px)  {
     .projects-cards{
-      grid-template-columns: none;
-  
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .projects-part2__donations {
+      width: 100%;
+      &__title-white{
+        margin-left: 20px;
+        padding: 5px;
+        width: 50vw;
+        font-size: 40px;
+      }
     }
     }
   
   
   @media screen and (max-width: 768px) {
-    .projects-part2__donations {
-      width: 100%;
+    .projects-cards{
+      grid-template-columns: none;
+  
     }
+
     .projects-part2__chart {
       display: none;
     }
   }
-  
   
