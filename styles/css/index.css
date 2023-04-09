@@ -860,4 +860,71 @@ h3 .block-title__text {
   opacity: 0.6;
 }
 
+@media (max-width: 767px) {
+  .connection {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .connection-form {
+    flex-direction: column;
+  }
+  .connection-form__firstname {
+    margin: 10px 10px;
+  }
+  .connection-form__namelast {
+    margin: 10px 10px;
+  }
+  .connection-form__email {
+    margin: 10px 10px;
+  }
+  .connection-form__subject {
+    margin: 10px 10px;
+  }
+  .connection .connection-form__message {
+    margin-left: auto;
+    margin-left: auto;
+  }
+  .connection .connection-form__message .connection-form__text {
+    margin-left: 20px;
+  }
+  .connection .connection-form__message .connection-form__input-text {
+    margin-left: 20px;
+    width: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .connection {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .connection-form {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .connection-form__firstname {
+    margin: 10px 10px;
+  }
+  .connection-form__namelast {
+    margin: 10px 10px;
+  }
+  .connection-form__email {
+    margin: 10px 10px;
+  }
+  .connection-form__subject {
+    margin: 10px 10px;
+  }
+  .connection .connection-form__message {
+    margin-left: auto;
+    margin-left: auto;
+  }
+  .connection .connection-form__message .connection-form__text {
+    margin-left: 100px;
+  }
+  .connection .connection-form__message .connection-form__input-text {
+    margin-left: 100px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
