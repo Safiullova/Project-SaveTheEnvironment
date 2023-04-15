@@ -1,0 +1,51 @@
+.aboutus{
+ display: flex;
+ margin: 70px;
+ padding: 50px;
+ width: 80vw;
+}
+
+.aboutus-discription{
+
+
+&__text{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #1D2130;
+
+}
+&__title{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 120%;
+
+color: #1D2130;
+}
+&__dolor{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+
+color:$color-dgray;
+
+}
+
+}
+.aboutus__button{
+    @include button;
+    background: $color-dgreen;
+}
+.aboutus__piple{
+    margin-left: 250px;
+
+    }
