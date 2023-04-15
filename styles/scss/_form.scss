@@ -1,9 +1,8 @@
 .connection{
 
     padding: 96px;
-    margin-left: 400px;
+    margin-left: 300px;
     margin-right: 402px;
-       
     &-form{
     display: flex;
 
@@ -37,9 +36,9 @@
 
         &__namelast{
             padding: 5px;
-          margin-left: 105px;
+            margin-left: 105px;
         }
-          &__lastname{
+        &__lastname{
             font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -71,8 +70,8 @@
 
     }
 
-   &__email-name{
-    font-family: 'Roboto';
+&__email-name{
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 19px;
@@ -84,9 +83,9 @@ color: $color-lblack;
 
 
 opacity: 0.6;
-   }
+}
 
-   &__emailid{
+    &__emailid{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -98,16 +97,15 @@ opacity: 0.6;
     border-top: none;
     border-left: none;
     border-right: none;
-    
-   }
+}
 
 
-   &__subject{
+&__subject{
     padding: 5px;
     margin-left: 15px;
-   }
+}
 
-   &__subject-name{
+&__subject-name{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -120,14 +118,14 @@ opacity: 0.6;
     
     
     opacity: 0.6;
-   }
+}
 
-   &__subject-input{
+&__subject-input{
     padding: 10px;
     border-top: none;
     border-left: none;
     border-right: none;
-   }
+}
 
 
     }
@@ -146,9 +144,9 @@ opacity: 0.6;
         
         color: $color-lblack;
         opacity: 0.6;
-       }
+    }
 
-       .connection-form__input-text{
+    .connection-form__input-text{
         width: 570px;
         height: 200px;
         padding-top: 5px;
@@ -162,15 +160,112 @@ line-height: 160%;
 color: $color-lblack;
 
 opacity: 0.6;
-       }
+        }
     }
-   
+}
+@media (max-width: 767px) {
+
+    .connection{
+
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &-form{
+            flex-direction: column;
+
+    
+            &__firstname {
+                margin: 10px 10px;
+
+            }
+            
+
+    
+            &__namelast{
+                margin: 10px 10px;
+            }
+
+    
+        &__email{
+            margin: 10px 10px;
+    
+        }
+    
+&__subject{
+        margin: 10px 10px;
     }
     
+    
+        }
+        .connection-form__message
+        {
+            margin-left: auto;
+            margin-left: auto;
+    
+            .connection-form__text{
+                margin-left: 20px;
+        }
+    
+        .connection-form__input-text{
+            margin-left: 20px;
+            width: 300px;
+            }
+        }
+    }
 
 
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .connection{
 
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
 
+        &-form{
+      justify-content: center;
+      margin-top: 30px;
 
+    
+            &__firstname {
+                margin: 10px 10px;
 
-   
+            }
+            
+
+    
+            &__namelast{
+                margin: 10px 10px;
+            }
+
+    
+        &__email{
+            margin: 10px 10px;
+    
+        }
+    
+&__subject{
+        margin: 10px 10px;
+    }
+    
+    
+        }
+        .connection-form__message
+        {
+            margin-left: auto;
+            margin-left: auto;
+    
+            .connection-form__text{
+                margin-left: 100px;
+        }
+    
+        .connection-form__input-text{
+            margin-left: 100px;
+         
+            }
+        }
+    }
+
+}
+
