@@ -13,27 +13,23 @@
 <body>
     <header class="header">
         <div class="header-menu" id="finsweet">
-
             <img class="header-menu__logo" src="/assets/images/logo.svg" alt="finsweet">
             <div class="header-menu__burger">
                 <span></span>
             </div>
-
             <nav class="header-menu__nav">
                 <ul class="header-menu__nav-list">
-                    <li class="header-menu__list-item"><a href="aboutus.html" target="_blank">About us</a></li>
-                    <li class="header-menu__list-item"><a href="whatwedo.html" target="_blank">What we do</a></li>
-                    <li class="header-menu__list-item"><a href="contactus.html" target="_blank">Contact us</a></li>
-                    <li class="header-menu__list-item"><a href="donation.html" target="_blank">Donate</a></li>
+                    <li class="header-menu__list-item"><a href="#about us">About us</a></li>
+                    <li class="header-menu__list-item"><a href="#what we do">What we do</a></li>
+                    <li class="header-menu__list-item"><a href="#contacts">Contact us</a></li>
+                    <li class="header-menu__list-item"><a href="#projects">Donate</a></li>
                 </ul>
             </nav>
         </div>
-
         <div class="header-description">
             <h1 class="header-description__title">Save the environment today for a better tomorrow</h1>
             <button class="header-description__button">What we do</button>
             <p class="header-description__play">Play Video</p>
-
             <div class="header-description__set-line">
                 <p class="header-description__planted">23,800 trees planted</p>
                 <img class="header-description__line-img" src="assets/images/Line.png" alt="Line">
@@ -42,15 +38,14 @@
         </div>
         </div>
     </header>
-
     <main>
-
-
-
-
-        <section class="aboutus">
+        <!-- Block  about us-->
+        <section class="aboutus" id="about us">
             <div class="aboutus-discription">
-                <p class="aboutus-discription__text">know About Us</p>
+                <h3 class="aboutus-discription block-title">
+                    <div class="block-title__line"></div>
+                    <p class="block-title__text">know About Us</p>
+                </h3>
                 <h2 class="aboutus-discription__title">We help nature smile and survive everywhere</h2>
                 <p class="aboutus-discription__dolor">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse
@@ -63,22 +58,59 @@
                 </p>
                 <button class="aboutus__button">Learn more</button>
             </div>
-
             <img class="aboutus__piple" src="assets/images/aboutus_images/foto.png" alt="piple">
-
         </section>
-
-
-
-
-
-
-
-        <section class="whatWeDo" id="what we do"></section>
-        <section class="YouCan"></section>
-        <section class="Our"></section>
-        <section class="ReadOurNews"></section>
-        <section class="OurEvents"></section>
+        <!-- Blok what we do -->
+        <section class="whatwedo" id="what we do">
+            <h3 class="whatwedo__block-title">
+                <div class="block-title__line"></div>
+                <p class="block-title__text">what we do</p>
+            </h3>
+            <div class="whatwedo__content">
+                <div class="whatwedo__content-block">
+                    <h2>We care for earth, care for the coming birth</h2>
+                    <p class="whatwedo__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse
+                        varius enim in eros elementum tristique.</p>
+                    <ul class="whatwedo__content__list">
+                        <li class="whatwedo__content__list-item">
+                            <img class="whatwedo-icon" src="./assets/images/build.png" alt="icon build">
+                            <p class="whatwedo__content__list-item-text"><span class="whatwedo-title">Build Healthy
+                                    Cities</span> <br><br>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing
+                                elit. Nihil dicta iste veniam optio. Magnam saepe qui quaerat, nobis cum sed doloremque
+                                porro animi cupiditate soluta molestiae facere veritatis exercitationem officia.</p>
+                        </li>
+                        <li class="whatwedo__content__list-item">
+                            <img class="whatwedo-icon" src="./assets/images/tree.png" alt="icon tree">
+                            <p class="whatwedo__content__list-item-text"><span class="whatwedo-title">Tree
+                                    Plantation</span> <br><br>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing
+                                elit. Nihil dicta iste veniam optio. Magnam saepe qui quaerat, nobis cum sed doloremque
+                                porro animi cupiditate soluta molestiae facere veritatis exercitationem officia.</p>
+                        </li>
+                        <li class="whatwedo__content__list-item">
+                            <img class="whatwedo-icon" src="./assets/images/protect.png" alt="icon protect">
+                            <p class="whatwedo__content__list-item-text"><span class="whatwedo-title">Protect Land and
+                                    Water</span> <br><br>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing
+                                elit. Nihil dicta iste veniam optio. Magnam saepe qui quaerat, nobis cum sed doloremque
+                                porro animi cupiditate soluta molestiae facere veritatis exercitationem officia.</p>
+                        </li>
+                        <li class="whatwedo__content__list-item">
+                            <img class="whatwedo-icon" src="./assets/images/animal.png" alt="icon animal">
+                            <p class="whatwedo__content__list-item-text"><span class="whatwedo-title">Build Healthy
+                                    Cities</span> <br><br>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing
+                                elit. Nihil dicta iste veniam optio. Magnam saepe qui quaerat, nobis cum sed doloremque
+                                porro animi cupiditate soluta molestiae facere veritatis exercitationem officia.</p>
+                        </li>
+                    </ul>
+                </div>
+                <img class="whatwedo__poster" src="./assets/images/men dog.png" alt="men and dog">
+            </div>
+        </section>
+        <!-- Block  projects -->
         <section class="projects" id="projects">
             <div class="projects-part1">
                 <h3 class="projects blok-title">
@@ -145,13 +177,15 @@
                     </div>
                 </div>
             </div>
-
         </section>
-
-        <section class="сontacts">
-            <div class="contacts-description" id="contact">
+        <!-- Block сontacts -->
+        <section class="сontacts" id="contacts">
+            <h3 class=" block-title">
+                <div class="block-title__line"></div>
+                <p class="block-title__text">Contact us</p>
+            </h3>
+            <div class="contacts-description">
                 <div class="contacts-description__contact">
-                    <h1 class="contacts-description__title">Contact us</h1>
                     <h2 class="contacts-description__text">We'd love to hear from you</h2>
                     <p class="contacts-description__question">Have any question in mind or want to enquire? Please feel
                         free
@@ -159,17 +193,12 @@
                         contact us through the form or the
                         following details.</p>
                 </div>
-
-
-
                 <div class="contacts-adress">
                     <h3 class="contacts-adress__title">Let's talk! </h3>
-
                     <div class="contacts-adress-description">
                         <a class="contacts-adress__tel" href="tel:+123456789">+1 23 456 789</a>
                         <a class="contacts-adress__mail" href="mailto:hello@finsweet.com">hello@finsweet.com</a>
                     </div>
-
                     <h3 class="contacts-adress__title-adress">Headoffice</h3>
                     <p class="contacts-adress__text">8 Brewery Drive, Hudson, NH 03051
                         USA</p>
@@ -177,16 +206,15 @@
                     <p class="contacts-adress__text-street">178 Marconi St., Venice, 34293
                         Italy</p>
                 </div>
-
             </div>
-
         </section>
-        <section class="Form"></section>
+        <!-- Block Map -->
         <section class="Map">
             <script type="text/javascript" charset="utf-8" async
                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6b94f61d8bfde17eece2a3e068a484598b3bcf8699bded580ef0239eaca051ec&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
             </script>
         </section>
+        <!-- Block  connection-->
         <section class="connection">
             <form class="connection-form">
                 <div class="connection-form__name">
@@ -201,7 +229,6 @@
                             placeholder="Doe">
                     </div>
                 </div>
-
                 <div class="connection-form__nameimail">
                     <div class="connection-form__email">
                         <label class="connection-form__email-name" for="emailid">Email Id</label><br>
@@ -213,25 +240,17 @@
                         <input class="connection-form__subject-input" type="text" id="subject" name="subject">
                     </div>
                 </div>
-
-
             </form>
             <form class="connection-form__message">
                 <div class="connection-form__textarea">
                     <label class="connection-form__text" for="message">Message</label><br>
                     <textarea class="connection-form__input-text" id="message" name="comment"
                         placeholder="Введите коментари"></textarea>
-
                 </div>
             </form>
         </section>
-
-
-        <section class="Map"></section>
-
-        <!-- прибавлять, переименовынать секции можно, удалять пока не желательно -->
     </main>
-    <!-- Footer start -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer__logo">
             <img src="/assets/icons/LogoWhite.png" alt="logo" href="#finsweet">
@@ -248,11 +267,10 @@
                     <a class="footer__menuList-item" href="#projects">Projects</a>
                 </li>
                 <li class="footer__menuList-items">
-                    <a class="footer__menuList-item" href="#contact">Contact</a>
+                    <a class="footer__menuList-item" href="#contacts">Contact</a>
                 </li>
             </ul>
         </nav>
-
         <nav class="footer__contacts">
             <ul class="footer__contactsList">
                 <li class="footer__contactsList-items">
@@ -275,7 +293,6 @@
             <button class="footer__form__button">Subscribe</button>
         </div>
     </footer>
-    <!--Footer end-->
 </body>
 
 </html>

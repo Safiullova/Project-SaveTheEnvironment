@@ -1,0 +1,63 @@
+h2 {
+    @include h2-title;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+h3 {
+    @include block-title;
+}
+
+.whatwedo {
+    padding: vh(110)  vw(110) vh(110) vw(110);
+    background-color: $color-lgray;
+
+    &__content {
+        display: flex;
+
+        &-block {
+            margin: 0 vw(96) 0  0;
+        }
+
+        &-text, .whatwedo__content__list-item-text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: $color-dgray;
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
+
+        &__list-item {
+            display: flex;
+
+                &-text{
+                    margin-top: 0;
+                    margin-bottom: 24px;
+                }
+        }
+    }
+
+    &-icon {
+        width: 28px;
+        height: 28px;
+        margin: 0 24px 24px 24px;
+    }
+
+    &-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $color-lblack;
+    }
+}
+
+@media screen and (max-width: 1232px) {
+    .whatwedo__poster {
+        display: none;
+    }
+}

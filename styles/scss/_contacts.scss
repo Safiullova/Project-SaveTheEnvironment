@@ -1,62 +1,38 @@
-
-    .contacts-description{
-        background-color: $color-lgray;
-        display: flex;
-        height: 30vw;
-
-&__contact{
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 70px;
-
+h2 {
+    @include h2-title;
+    }
+    
+h3 {
+        @include block-title;
+    }
+    
+.сontacts {
+    background-color: $color-lgray; 
+    padding: 70px; 
 }
-    &__title {
-position: relative;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
+.contacts-description{
+        display: flex;
 
-letter-spacing: 2px;
-text-transform: uppercase;
-
-
-color: $color-lblack;
-
+    &__contact{
+    margin-left: 136px; 
+    margin-right: 50px;
+    width: 40%; 
     }
-    &__text{
-        font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 56px;
-line-height: 120%;
 
-
-color: $color-lblack;
-
-    }
     &__questiont{
         font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 160%;
-
-color: $color-lblack;
-
-opacity: 0.7;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: $color-lblack;
+        opacity: 0.7;
     }
+}
 
-    }
-
-
-    .contacts-adress{
-        margin-top: 30px;
-        margin-right: 250px;
-        padding: 15px;
-
-        width: 30vw;
+.contacts-adress{
+    padding: 15px;
+    width: 30vw;
 
         &__title{
             font-family: 'Roboto';
@@ -64,53 +40,44 @@ opacity: 0.7;
             font-weight: 700;
             font-size: 24px;
             line-height: 160%;
-
             color: $color-lblack;
         }
-        .contacts-adress-description {
+        &-description {
                 display: flex;
         }
 
-            &__tel {
+        &__tel {
+            margin-right: 25px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.25em;
+            line-height: 28px;
+            text-decoration: none;
+            color: $color-dgray;
+        }
 
-                    margin-right: 25px;
-                    font-family: 'Roboto';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 1.25em;
-                    line-height: 28px;
-                    text-decoration: none;
-                    
-                    color: $color-dgray;
-                    
-                }
+        &__mail{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            text-decoration: none;
+            color: $color-dgray;
+        }
+}
 
-                &__mail{
-
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 28px;
-                text-decoration: none;
-                
-                color: $color-dgray;
-                    }
-                }
-            
-    .contacts-adress__titlee-adress{
-
+.contacts-adress__title-adress{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 160%;
     color: $color-lblack;
-
-                }
+}
 
 .contacts-adress__text {
-
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -130,7 +97,6 @@ color: $color-lblack;
 }
 
 .contacts-adress__text-street{
-
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -139,42 +105,38 @@ line-height: 160%;
 color: $color-dgray;
 }
 
-@media (max-width: 767px){
-
+@media (max-width: 767px) {
     .contacts-description{
         flex-direction: column;
         flex: 0 0 auto;
         margin-left: auto;
         margin-right: auto;
-    
 
-&__contact{
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 10px;
+        &__contact{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+        width: 100%; 
+        }
 
-}
-    &__title {
+        &__title {
         font-size: 0.9em;
+        }
 
-    }
-    &__text{
-        
-    font-size: 3em;
+        &__text{
+        font-size: 3em;
+        }
 
-
-    }
-    &__questiont{
+        &__questiont{
         font-size: 0.9em;
+        }
     }
 
-    }
     .contacts-adress{
         margin-top: auto;
-            margin-right: auto;
-            padding: 5px;
-    
-            width: 100vw;
+        margin-right: auto;
+        padding: 5px;
+        width: 100vw;
 
         &__title{
             font-family: 'Roboto';
@@ -182,14 +144,11 @@ color: $color-dgray;
             font-weight: 700;
             font-size: 24px;
             line-height: 160%;
-
             color: $color-lblack;
         }
-        .contacts-adress-description {
+        &-description {
             flex-direction: column;
         }
-
-
     }
 }
 
@@ -200,18 +159,18 @@ color: $color-dgray;
         flex: 0 0 auto;
         margin-left: auto;
         margin-right: auto;
-    
 
-&__contact{
+    &__contact{
     margin-left: 50px;
     margin-right: 5px;
     padding: 10px;
+    width: 100%;
+    }
 
-}
     &__title {
         font-size: 0.9em;
-
     }
+
     &__text{
         
     font-size: 3em;
@@ -220,12 +179,11 @@ color: $color-dgray;
     &__questiont{
         font-size: 0.9em;
     }
+}
 
-    }
     .contacts-adress{
         margin-left: 50px;
         padding: 5px;
-    
         width: 100vw;
 
         &__title{
@@ -234,10 +192,8 @@ color: $color-dgray;
             font-weight: 700;
             font-size: 24px;
             line-height: 160%;
-
             color: $color-lblack;
         }
-
     }
 }
 
