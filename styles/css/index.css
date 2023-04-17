@@ -299,6 +299,83 @@ h2 {
   font-weight: 700;
   font-size: 48px;
   line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+}
+h3 .block-title__line {
+  width: 72px;
+  height: 0px;
+  border: 2px solid #1D2130;
+  margin-right: 24px;
+}
+h3 .block-title__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1D2130;
+}
+
+.whatwedo {
+  padding: 1.9130434783vh 7.3333333333vw 1.9130434783vh 7.3333333333vw;
+  background-color: #EBF0F9;
+}
+.whatwedo__content {
+  display: flex;
+}
+.whatwedo__content-block {
+  margin: 0 6.4vw 0 0;
+}
+.whatwedo__content-text, .whatwedo__content .whatwedo__content__list-item-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #525560;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.whatwedo__content__list-item {
+  display: flex;
+}
+.whatwedo__content__list-item-text {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.whatwedo-icon {
+  width: 28px;
+  height: 28px;
+  margin: 0 24px 24px 24px;
+}
+.whatwedo-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1D2130;
+}
+
+@media screen and (max-width: 1232px) {
+  .whatwedo__poster {
+    display: none;
+  }
+}
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
 }
 
 h3 {
@@ -643,7 +720,7 @@ h3 .block-title__text {
   line-height: 160%;
   color: #1D2130;
 }
-.contacts-adress .contacts-adress-description {
+.contacts-adress-description {
   display: flex;
 }
 .contacts-adress__tel {
@@ -666,7 +743,7 @@ h3 .block-title__text {
   color: #525560;
 }
 
-.contacts-adress__titlee-adress {
+.contacts-adress__title-adress {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -738,7 +815,7 @@ h3 .block-title__text {
     line-height: 160%;
     color: #1D2130;
   }
-  .contacts-adress .contacts-adress-description {
+  .contacts-adress-description {
     flex-direction: column;
   }
 }
