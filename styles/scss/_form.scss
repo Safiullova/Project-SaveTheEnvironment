@@ -40,15 +40,13 @@
         }
         &__lastname{
             font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 160%;
-    
-    color: $color-lblack;
-    
-    opacity: 0.6;
-    }
+            font-style: normal;
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 160%;
+            color: $color-lblack;
+            opacity: 0.6;
+        }
     
     &__lastname-input{
     font-family: 'Roboto';
@@ -61,13 +59,11 @@
     border-right: none;
     
     color: $color-lblack;
-    
     }
 
     &__email{
         padding: 5px;
         margin: 20px 15px;
-
     }
 
 &__email-name{
@@ -76,12 +72,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 19px;
 line-height: 160%;
-
-
 color: $color-lblack;
-
-
-
 opacity: 0.6;
 }
 
@@ -91,8 +82,6 @@ opacity: 0.6;
     font-weight: 400;
     font-size: 19px;
     line-height: 160%;
-    
-    
     color: $color-lblack;
     border-top: none;
     border-left: none;
@@ -111,12 +100,7 @@ opacity: 0.6;
     font-weight: 700;
     font-size: 19px;
     line-height: 160%;
-    
-    
-    
     color: $color-lblack;
-    
-    
     opacity: 0.6;
 }
 
@@ -126,80 +110,63 @@ opacity: 0.6;
     border-left: none;
     border-right: none;
 }
-
-
     }
-    .connection-form__message
-    {
-        margin-left: 105px;
-        margin-top: 60px;
 
+.connection-form__message{
+    margin-left: 105px;
+    margin-top: 60px;
 
-        .connection-form__text{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 19px;
-        line-height: 160%;
-        
-        color: $color-lblack;
-        opacity: 0.6;
-    }
+.connection-form__text{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 19px;
+line-height: 160%;
+color: $color-lblack;
+opacity: 0.6;
+}
 
     .connection-form__input-text{
         width: 570px;
         height: 200px;
         padding-top: 5px;
         font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 160%;
-
-
-color: $color-lblack;
-
-opacity: 0.6;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: $color-lblack;
+        opacity: 0.6;
         }
     }
 }
 @media (max-width: 767px) {
 
     .connection{
-
         padding: 10px;
         margin-left: auto;
         margin-right: auto;
 
         &-form{
             flex-direction: column;
-
     
             &__firstname {
                 margin: 10px 10px;
-
             }
             
-
-    
             &__namelast{
                 margin: 10px 10px;
             }
 
-    
         &__email{
             margin: 10px 10px;
-    
-        }
+            }
     
 &__subject{
         margin: 10px 10px;
     }
-    
-    
-        }
-        .connection-form__message
-        {
+}
+        .connection-form__message{
             margin-left: auto;
             margin-left: auto;
     
@@ -214,7 +181,6 @@ opacity: 0.6;
         }
     }
 
-
 }
 @media (min-width: 768px) and (max-width: 1023px){
     .connection{
@@ -224,35 +190,26 @@ opacity: 0.6;
         margin-right: auto;
 
         &-form{
-      justify-content: center;
-      margin-top: 30px;
-
+        justify-content: center;
+        margin-top: 30px;
     
             &__firstname {
                 margin: 10px 10px;
-
             }
             
-
-    
             &__namelast{
                 margin: 10px 10px;
             }
 
-    
         &__email{
             margin: 10px 10px;
-    
         }
     
 &__subject{
         margin: 10px 10px;
     }
-    
-    
-        }
-        .connection-form__message
-        {
+}
+        .connection-form__message{
             margin-left: auto;
             margin-left: auto;
     
@@ -262,10 +219,8 @@ opacity: 0.6;
     
         .connection-form__input-text{
             margin-left: 100px;
-         
             }
         }
     }
-
 }
 
