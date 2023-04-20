@@ -1,14 +1,18 @@
 .connection{
 
-    padding: 96px;
-    margin-left: 300px;
-    margin-right: 402px;
+    padding: vw(96);
+    margin-left: 10%;
+    margin-right: 10%;
     &-form{
     display: flex;
 
+    &__name {
+        width: 50%;
+    }
+
         &__firstname {
             padding: 5px;
-            margin: 20px 105px;
+            margin: 0 0 35px 0;
         }
         
         &__namefirst{
@@ -36,8 +40,7 @@
 
         &__namelast{
             padding: 5px;
-            margin-left: 105px;
-        }
+            }
         &__lastname{
             font-family: 'Roboto';
             font-style: normal;
@@ -63,7 +66,7 @@
 
     &__email{
         padding: 5px;
-        margin: 20px 15px;
+        margin:  0 0 35px 0;
     }
 
 &__email-name{
@@ -91,7 +94,6 @@ opacity: 0.6;
 
 &__subject{
     padding: 5px;
-    margin-left: 15px;
 }
 
 &__subject-name{
@@ -113,7 +115,6 @@ opacity: 0.6;
     }
 
 .connection-form__message{
-    margin-left: 105px;
     margin-top: 60px;
 
 .connection-form__text{
@@ -127,7 +128,7 @@ opacity: 0.6;
 }
 
     .connection-form__input-text{
-        width: 570px;
+        width: 100%;
         height: 200px;
         padding-top: 5px;
         font-family: 'Roboto';
@@ -143,9 +144,6 @@ opacity: 0.6;
 @media (max-width: 767px) {
 
     .connection{
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
 
         &-form{
             flex-direction: column;
@@ -166,28 +164,15 @@ opacity: 0.6;
         margin: 10px 10px;
     }
 }
-        .connection-form__message{
-            margin-left: auto;
-            margin-left: auto;
-    
             .connection-form__text{
                 margin-left: 20px;
         }
-    
-        .connection-form__input-text{
-            margin-left: 20px;
-            width: 300px;
-            }
         }
     }
 
-}
+
 @media (min-width: 768px) and (max-width: 1023px){
     .connection{
-
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
 
         &-form{
         justify-content: center;
@@ -209,18 +194,7 @@ opacity: 0.6;
         margin: 10px 10px;
     }
 }
-        .connection-form__message{
-            margin-left: auto;
-            margin-left: auto;
-    
-            .connection-form__text{
-                margin-left: 100px;
-        }
-    
-        .connection-form__input-text{
-            margin-left: 100px;
-            }
-        }
+
     }
 }
 

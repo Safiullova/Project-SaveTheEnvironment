@@ -136,7 +136,7 @@ color: $color-dgray;
         margin-top: auto;
         margin-right: auto;
         padding: 5px;
-        width: 100vw;
+        width: 100%;
 
         &__title{
             font-family: 'Roboto';
@@ -184,7 +184,7 @@ color: $color-dgray;
     .contacts-adress{
         margin-left: 50px;
         padding: 5px;
-        width: 100vw;
+    
 
         &__title{
             font-family: 'Roboto';
