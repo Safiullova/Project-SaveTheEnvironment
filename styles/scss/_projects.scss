@@ -86,7 +86,6 @@ h3 {
     &__donations {
       display: flex;
       flex-direction: column;
-      width: 58%;
       margin-top: 56px;
       padding-right: 5%;
       padding-bottom: 5%;
@@ -168,7 +167,6 @@ h3 {
       &__title-white{
         margin-left: 20px;
         padding: 5px;
-        width: 50vw;
         font-size: 40px;
       }
     }
@@ -178,7 +176,7 @@ h3 {
   @media screen and (max-width: 768px) {
     .projects-cards{
       grid-template-columns: none;
-  
+
     }
 
     .projects-part2__chart {
