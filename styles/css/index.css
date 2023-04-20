@@ -57,6 +57,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  padding: 20px;
   color: #0B0706;
   text-decoration: none;
 }
@@ -64,7 +65,6 @@ a {
   background-color: #0B0706;
   color: #EFF7F2;
   border-radius: 4px;
-  padding: 20px;
 }
 
 .header-description {
